@@ -6,11 +6,14 @@
 
     <meta charset="UTF-8" />
 
-    <!-- Favicons (GitHub Pages + Vite SAFE) -->
-    <link rel="icon" href="%BASE_URL%favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="%BASE_URL%favicon-32.png" />
-    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
-    <link rel="apple-touch-icon" sizes="180x180" href="%BASE_URL%apple-touch-icon.png" />
+    <!-- Favicons -->
+    <!-- Для браузеров -->
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- Для iOS Home Screen (ОЧЕНЬ ВАЖНО: относительный путь) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
 
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +27,7 @@
   <body>
     <div id="root"></div>
 
-    <!-- ❗ ВАЖНО: БЕЗ %BASE_URL% -->
+    <!-- Entry point Vite (НЕ МЕНЯТЬ) -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
